@@ -1,11 +1,26 @@
+
+
 <%= form_for event do |f| %>
     <p>
         <%=f.label :name %>
-        <%= f.text_field :name %>
+        <%= f.text_field :name, placeholder: "Event name" %>
     </p>
     <p>
         <%=f.label :date %>
         <%= f.date_field :date %>
     </p>
-    <%= f.submit%>
+    <p>
+        <%=f.label :capacity %>
+        <%= f.text_field :capacity, placeholder: "Add capacity" %>
+    </p>
+    <p>
+        <%= f.label :city %>
+        <%= f.text_field :city, placeholder: "City name"%>
+    </p>
+    <p>
+        <%= f.submit%>
+    </p>
+
+
+
 <%end%>
