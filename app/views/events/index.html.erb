@@ -1,1 +1,5 @@
-events#index page
+<%= link_to 'Add New Event', new_event_url %>
+<% @events.each do |event| %>
+<p><%= link_to("#{event.date}, #{event.name}, #{event.city}",event_url(event))%></p>
+
+<% end %>
